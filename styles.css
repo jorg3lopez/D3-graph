@@ -1,0 +1,25 @@
+fieldset {
+
+    width: 250px;
+    height: 190px;
+    background-color: lightblue;
+ }
+legend {
+  color: red;
+  font-size: 2em;
+}
+
+.boldme {
+  font-weight: bold;
+}
+
+.output {
+  background-color: lightyellow;
+  width: 280px;
+  height: 190px;
+  font-weight: bold;
+}
+
+body {
+  background-color: white;
+}
