@@ -16,10 +16,13 @@ legend {
 .output {
   background-color: lightyellow;
   width: 280px;
-  height: 190px;
+  height: 230px;
   font-weight: bold;
 }
 
 body {
   background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
 }

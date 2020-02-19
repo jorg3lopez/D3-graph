@@ -3,6 +3,7 @@ var employees=[];
  function init() {
    'use strict';
   //document.getElementById('button-submit').addEventListener('click', send);
+   document.getElementById('out-browserinfo').innerHTML = navigator.userAgent;
    document.getElementById('button-submit').onclick = send;
 }
 function getData() {
@@ -48,7 +49,7 @@ var mlist = [ "January", "February", "March", "April", "May", "June", "July", "A
   document.getElementById('out-employeeid').innerHTML = "Employee ID: " + employees[employees.length-1].Id;
   document.getElementById('out-hiredate').innerHTML = "Hire Date: " + month + " " + date.getDate() + " " + date.getFullYear();
   document.getElementById('out-totalemployees').innerHTML = "Total Employees: " + employees.length;
-   console.log(navigator.appName);
+   //console.log(navigator.userAgent);
 }
 //document.addEventListener('DOMContentLoaded', init);
  window.onload = init;
