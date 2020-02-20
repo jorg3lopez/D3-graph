@@ -9,6 +9,20 @@ var employees=[];
 }
   function toServer (dataJson){
      /*only if I need to manually send the JSON file to the server.*/
+    //const myForm = document.getElementById('theform');
+    
+      console.log(dataJson);
+      
+      fetch('data.php',{
+      method: 'post',
+      body: dataJson
+     }).then(function (response) {
+      return response.text();
+     }).then(function (text) {
+      console.log(text);
+     }).catch(function (error) {
+      console.error(error);
+     })
    }
 function getData() {
   'use strict';
